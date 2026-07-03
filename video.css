@@ -1,0 +1,34 @@
+.room-video {
+  margin-top: 18px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #f8faf9;
+}
+
+.room-video video {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  background: #092d48;
+}
+
+.room-video > span {
+  display: block;
+  padding: 11px 13px;
+}
+
+.room-video b,
+.room-video small {
+  display: block;
+}
+
+.room-video b {
+  color: var(--navy);
+  font-size: 11px;
+}
+
+.room-video small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 9px;
+}
