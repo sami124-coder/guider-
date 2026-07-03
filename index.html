@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#103b5d">
+  <title>HITSZ Student Journey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="#"><span>H</span><div><b>Student Journey</b><small>HITSZ · SHENZHEN</small></div></a>
+    <div class="header-tools">
+      <span class="status"><i></i> New student guide</span>
+      <a href="http://en.hitsz.edu.cn/Incoming_Students.htm" target="_blank" rel="noopener">Official HITSZ ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">YOUR ARRIVAL, MADE SIMPLE</p>
+        <h1>One journey.<br><em>Four clear stages.</em></h1>
+        <p>Follow each section in order—from preparing at home to settling into your studies in Shenzhen.</p>
+      </div>
+      <aside>
+        <span>Start here</span>
+        <strong id="overallProgress">0%</strong>
+        <small>of your preparation complete</small>
+        <div class="mini-progress"><i id="overallBar"></i></div>
+      </aside>
+    </section>
+
+    <section class="app-shell">
+      <nav class="tabs" role="tablist" aria-label="Student journey sections">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="before-arrival" data-tab="before-arrival"><span>01</span><b>Before Arrival</b><small>Prepare at home</small></button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="university" data-tab="university"><span>02</span><b>University</b><small>Register and set up</small></button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="accommodation" data-tab="accommodation"><span>03</span><b>Accommodation</b><small>Choose your home</small></button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="study" data-tab="study"><span>04</span><b>Study</b><small>Begin your program</small></button>
+      </nav>
+
+      <div class="panels">
+        <section class="panel active" id="before-arrival" role="tabpanel">
+          <div class="panel-head"><div><p class="eyebrow">STAGE 01</p><h2>What do you need before arrival?</h2><p>Complete these steps before travelling. Keep digital and printed copies of every important document.</p></div><span class="stage-icon">✈</span></div>
+          <div class="steps">
+            <article class="step">
+              <div class="step-no">1</div>
+              <div><h3>Check your admission documents</h3><p>Confirm the registration date in your Admission Notice. Your personal notice and current university instructions always take priority.</p>
+                <div class="check-row"><label><input class="journey-check" type="checkbox"><i></i>Passport valid</label><label><input class="journey-check" type="checkbox"><i></i>Admission Notice</label><label><input class="journey-check" type="checkbox"><i></i>JW201/JW202</label></div>
+              </div>
+            </article>
+            <article class="step">
+              <div class="step-no">2</div>
+              <div><h3>Prepare your entry documents</h3><p>Bring your passport, valid student visa, admission documents, and several recent blue-background ID photos. Keep copies of your passport information page and visa.</p></div>
+            </article>
+            <article class="step">
+              <div class="step-no">3</div>
+              <div><h3>Plan your money and payments</h3><p>Prepare enough RMB for transport, food, daily necessities, and initial housing expenses. Tuition depends on your program and scholarship.</p>
+                <div class="costs"><span><small>Undergraduate</small><b>¥30,000/year</b></span><span><small>Master's</small><b>¥35,000/year</b></span><span><small>Doctoral</small><b>¥42,000/year</b></span><span><small>Insurance</small><b>¥800/year</b></span></div>
+              </div>
+            </article>
+            <article class="step important-step">
+              <div class="step-no">4</div>
+              <div><h3>Choose housing before booking your flight</h3><p>University housing applications generally begin in mid-July, while rooms are handed over from the beginning of September. If you arrive before the dormitory opens, you will need to stay in a hotel temporarily.</p><button class="jump-button" data-go="accommodation">Compare housing options →</button></div>
+            </article>
+            <article class="step">
+              <div class="step-no">5</div>
+              <div><h3>Plan your journey to Shenzhen</h3><p>Save the campus address in English and Chinese, confirm your arrival time, and arrange airport or railway transport. Coordinate your arrival with your accommodation opening date.</p></div>
+            </article>
+          </div>
+          <div class="panel-footer"><span>Next: learn what happens at the university</span><button class="next-button" data-go="university">Continue to University <b>→</b></button></div>
+        </section>
+
+        <section class="panel" id="university" role="tabpanel" hidden>
+          <div class="panel-head"><div><p class="eyebrow">STAGE 02</p><h2>University information</h2><p>Follow this order when you arrive and complete your university registration.</p></div><span class="stage-icon">H</span></div>
+          <div class="steps">
+            <article class="step"><div class="step-no">1</div><div><h3>Complete university registration</h3><p>Go to the location and time stated in your Admission Notice. Bring your original passport, visa, Admission Notice, JW201/JW202, and requested photos.</p><a class="source-link" href="http://en.hitsz.edu.cn/info/1140/1453.htm" target="_blank" rel="noopener">Official registration guide ↗</a></div></article>
+            <article class="step"><div class="step-no">2</div><div><h3>Activate your HIT account</h3><p>Your unified identity account is used for student systems and tuition payment. Then activate your student email, Wi-Fi, mobile SIM, aTrust remote access, and campus card.</p><div class="tags"><span>Student ID</span><span>Email</span><span>Wi-Fi</span><span>SIM card</span><span>aTrust</span><span>Campus card</span></div></div></article>
+            <article class="step"><div class="step-no">3</div><div><h3>Pay the required fees</h3><p>If your scholarship does not cover all tuition, pay the required amount by the end of registration day through the HITSZ Tuition Management System. Accommodation and other fees are handled separately.</p><a class="source-link" href="https://en.hitsz.edu.cn/info/1149/1433.htm" target="_blank" rel="noopener">Official fee instructions ↗</a></div></article>
+            <article class="step"><div class="step-no">4</div><div><h3>Complete the medical examination</h3><p>Keep the original Physical Examination Record and a photocopy. It is required for your first residence-permit application.</p></div></article>
+            <article class="step urgent"><div class="step-no">5</div><div><h3>Apply for your residence permit</h3><p><b>X1 visa holders must apply within 30 days of entering China.</b> Prepare the application form, medical record, temporary residence registration, photo receipt, passport copies, JW202, interview form, and university guarantee letter.</p><p>Processing normally takes about 10–15 working days. The official fee is ¥400 for up to 360 days.</p><a class="source-link" href="https://en.hitsz.edu.cn/info/1148/1432.htm" target="_blank" rel="noopener">Complete official permit instructions ↗</a></div></article>
+          </div>
+          <div class="panel-footer"><button class="back-button" data-go="before-arrival">← Before Arrival</button><button class="next-button" data-go="accommodation">Continue to Accommodation <b>→</b></button></div>
+        </section>
+
+        <section class="panel" id="accommodation" role="tabpanel" hidden>
+          <div class="panel-head"><div><p class="eyebrow">STAGE 03</p><h2>Accommodation information</h2><p>Choose between affordable university housing and more flexible external student housing.</p></div><span class="stage-icon">⌂</span></div>
+
+          <div class="housing-timeline">
+            <div><span>Mid-July</span><b>Housing registration begins</b><p>Apply early if you want shared university housing.</p></div>
+            <i></i>
+            <div><span>Before travel</span><b>Confirm your room</b><p>Do not book your arrival based on an unconfirmed room.</p></div>
+            <i></i>
+            <div><span>Early September</span><b>Move-in begins</b><p>Room allocation and key handover start.</p></div>
+          </div>
+
+          <div class="arrival-alert"><span>!</span><div><b>Arriving early?</b><p>If you reach Shenzhen before the university accommodation starts receiving students, you must arrange and pay for a hotel until move-in opens.</p></div></div>
+
+          <div class="housing-grid">
+            <article class="housing-card recommended">
+              <div class="housing-head"><span>OPTION A</span><b>Most affordable</b></div>
+              <h3>University dormitory</h3>
+              <p class="price"><strong>¥250</strong> / student / month</p>
+              <ul class="features">
+                <li class="yes">Shared room for three students</li>
+                <li class="yes">Three beds, desks, and chairs</li>
+                <li class="yes">Private bathroom inside the room</li>
+                <li class="yes">Close to university facilities</li>
+                <li class="no">No private rooms</li>
+                <li class="no">No kitchen; cooking is not allowed</li>
+              </ul>
+              <div class="payment"><small>PAYMENT</small><b>Six months paid in advance</b></div>
+            </article>
+
+            <article class="housing-card">
+              <div class="housing-head"><span>OPTION B</span><b>More flexible</b></div>
+              <h3>External student housing</h3>
+              <p class="price"><strong>Higher rent</strong></p>
+              <ul class="features">
+                <li class="yes">Private or shared rooms available</li>
+                <li class="yes">Private kitchen and bathroom</li>
+                <li class="yes">Cooking is allowed</li>
+                <li class="yes">Options close to the university</li>
+                <li class="yes">Students can coordinate roommates in advance</li>
+                <li class="no">More expensive than university housing</li>
+              </ul>
+              <div class="payment"><small>IMPORTANT</small><b>Confirm contract, deposit, utilities, and location</b></div>
+            </article>
+          </div>
+
+          <div class="steps compact">
+            <article class="step"><div class="step-no">1</div><div><h3>Apply and receive confirmation</h3><p>Submit your accommodation choice when registration opens. Keep confirmation messages and payment instructions.</p></div></article>
+            <article class="step"><div class="step-no">2</div><div><h3>Coordinate your arrival date</h3><p>Arrange travel after you know the actual move-in date. Book temporary accommodation if arriving earlier.</p></div></article>
+            <article class="step"><div class="step-no">3</div><div><h3>Check in and inspect the room</h3><p>Complete registration, receive your key, check the room condition, understand payment rules, and buy bedding and daily necessities.</p></div></article>
+            <article class="step"><div class="step-no">4</div><div><h3>Register your temporary residence</h3><p><b>Complete registration within 24 hours</b> of entering or changing accommodation. Off-campus students should coordinate with the landlord or property office.</p><a class="source-link" href="https://en.hitsz.edu.cn/Incoming_Students/Accommodation.htm" target="_blank" rel="noopener">Official accommodation documents ↗</a></div></article>
+          </div>
+          <div class="panel-footer"><button class="back-button" data-go="university">← University</button><button class="next-button" data-go="study">Continue to Study <b>→</b></button></div>
+        </section>
+
+        <section class="panel" id="study" role="tabpanel" hidden>
+          <div class="panel-head"><div><p class="eyebrow">STAGE 04</p><h2>Study information</h2><p>Set up your academic life and understand the rules that apply throughout your program.</p></div><span class="stage-icon">◎</span></div>
+          <div class="steps">
+            <article class="step"><div class="step-no">1</div><div><h3>Read your academic guide</h3><p>Review program requirements, the academic calendar, course registration, assessment, grades, attendance, and student-status rules. Undergraduate and graduate regulations differ.</p></div></article>
+            <article class="step"><div class="step-no">2</div><div><h3>Register for courses</h3><p>Use your activated student account, follow your school’s course-selection instructions, and contact your academic office if required courses are missing.</p></div></article>
+            <article class="step"><div class="step-no">3</div><div><h3>Know the essential rules</h3><p>Read policies covering exams, academic integrity, disciplinary action, dormitory conduct, insurance, scholarships, immigration, grade records, and Chinese-language exemptions.</p><a class="source-link" href="https://en.hitsz.edu.cn/Incoming_Students/Rules_and_Regulations.htm" target="_blank" rel="noopener">Official rules and regulations ↗</a></div></article>
+            <article class="step"><div class="step-no">4</div><div><h3>Use student support services</h3><p>Keep your student email active and check official notices regularly. Use the International Student Handbook and Shenzhen Life guide for daily support and local information.</p></div></article>
+            <article class="step success"><div class="step-no">✓</div><div><h3>You are ready to begin</h3><p>Keep this guide available during your first weeks and confirm personal cases directly with the International Office.</p>
+              <div class="contact-row"><a href="mailto:admissions@hit.edu.cn"><small>EMAIL</small><b>admissions@hit.edu.cn</b></a><a href="tel:+8675586716144"><small>PHONE</small><b>+86 755 8671 6144</b></a><span><small>OFFICE</small><b>International Office · H721</b></span></div>
+            </div></article>
+          </div>
+          <div class="panel-footer"><button class="back-button" data-go="accommodation">← Accommodation</button><button class="next-button" data-go="before-arrival">Review from the beginning ↻</button></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer><b>HITSZ Student Journey</b><p>Information is simplified for new students. Current official notices and personal university instructions always take priority.</p><a href="http://en.hitsz.edu.cn/Incoming_Students.htm" target="_blank" rel="noopener">Official resources ↗</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
